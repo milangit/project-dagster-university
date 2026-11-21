@@ -21,5 +21,11 @@ http://127.0.0.1:3000/overview/activity/timeline?groupBy=automation
 dg launch --assets taxi_trips_file
 
 
+dg scaffold defs dagster.asset assets/metrics.py
+
+
+dg scaffold defs dagster.resources resources.py
+
+
 příště:
-https://courses.dagster.io/courses/take/dagster-essentials/multimedia/48098606-loading-data-into-a-database
+https://courses.dagster.io/courses/take/dagster-essentials/multimedia/48099851-what-s-a-code-location
