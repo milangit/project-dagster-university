@@ -25,6 +25,8 @@ dg scaffold defs dagster.asset assets/metrics.py
 
 
 dg scaffold defs dagster.resources resources.py
+dg scaffold defs dagster.job jobs.py
+dg scaffold defs dagster.schedule schedules.py
 
 
 příště:
