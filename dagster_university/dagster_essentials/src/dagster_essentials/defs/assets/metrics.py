@@ -11,6 +11,7 @@ import matplotlib.pyplot as plt
 # import os
 
 from dagster_essentials.defs.assets import constants
+from dagster_essentials.defs.partitions import weekly_partition
 
 
 # src/dagster_essentials/defs/assets/metrics.py
@@ -59,7 +60,8 @@ def manhattan_map() -> None:
 
 
 @dg.asset(
-    deps=["taxi_trips"]
+    deps=["taxi_trips"],
+    partitions_def=weekly_partition
 )
 def trips_by_week(database: DuckDBResource) -> None:
     """
